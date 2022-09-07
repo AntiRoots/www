@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kodunetöö nr. 1</title> <!--seda ei kuvata lehekülje sisus, vaid on näha tiitliribal-->
+<meta charset="utf-8">
+</head>
+
+<body> <!--siit algab kuvatav lehekülje sisu-->
+
+<h1>Kodutöö 1 HTML õppematerjal</h1> <!--pealkiri h1 kõige suurem ja h6 kõige väiksem-->
+<hr> <!--horisontaalne joon-->
+<h2 id="alg">HTML5 elemendid</h2>
+<ol>
+	<li><a href="#peal">Pealkiri</a></li>
+  <li><a href="#para">Paragrahv</a></li>
+	<li><a href="#eel">Eelvorming</a></li>
+	<li><a href="#link">Link/viit</a></li>
+	<li><a href="#pilt">Pilt</a></li>
+	<li><a href="#tekst">Teksti värv</a></li>
+	<li><a href="#tabel">Tabelid</a></li>
+	<li><a href="#list">Loetelud</a></li>
+	<li><a href="#vorm">Vormingud</a></li>
+	<li><a href="#kom">Kommentaar</a></li>
+</ol>
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="peal">Pealkiri</h4>
+<p>Pealkirja lisamiseks kasutatakse märgendit &lt;h1&gt;Tekst&lt;/h1&gt; <br>
+Pealkirjadel on 6 erinevat taset<p>
+<h1>Pealkiri h1</h1> &lt;h1&gt;Pealkiri h1&lt;/h1&gt;
+<h2>Pealkiri h2</h2> &lt;h2&gt;Pealkiri h2&lt;/h2&gt;
+<h3>Pealkiri h3</h3> &lt;h3&gt;Pealkiri h3&lt;/h3&gt;
+<h4>Pealkiri h4</h4> &lt;h4&gt;Pealkiri h4&lt;/h4&gt;
+<h5>Pealkiri h5</h5> &lt;h5&gt;Pealkiri h5&lt;/h5&gt;
+<h6>Pealkiri h6</h6> &lt;h6&gt;Pealkiri h6&lt;/h6&gt;
+
+<hr><!--horisontaalne joon-->
+
+<h4 id="para">Paragrahv</h4>
+<p>Paragrahv algab alati uuelt realt ja brauser lisab enne ja pärast paragrahvi vaba ruumi<br>
+Paragrahvi m&auml;rgendiks kasutatakse &lt;p&gt;tekst&lt;/p&gt;</p>
+<p>&lt;p&gt;Esimene paragrahv&lt;/p&gt;</p>
+<p>&lt;p&gt;Teine Paragrahv&lt;/p&gt;</p>
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="eel">Eelvorming</h4>
+
+<p>Mõnikord on siiski vaja teksti esitada fikseeritud kujul<br>
+Sellisel juhul kuvatakse tekst teistsuguses kirjastiilis<br>
+Näiteks mõni koodi näidis või luuletus</p>
+<pre>
+Luule
+    luule
+Tuuli
+    tuul</pre>
+<p>&lt;pre&gt;<br>Luule<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;luule<br>Tuuli<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tuul&lt;/pre&gt; </p><!-- &nbsp; see on tühik, mis on alati kuvatud-->
+
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="link">Link/viide</h4>
+
+<p>Lingi või viite (lehekülje sisene link) tegemiseks kasutatakse märgentit &lt;a&gt;...&lt;/a&gt; <br/>
+Näiteks: see link viib sind <a href='https://www.delfi.ee' >Delfi.ee</a> leheküljele</p>
+<p>&lt;a href=&rdquo;https://www.delfi.ee&rdquo; &gt;Delfi.ee&lt;/a&gt;</p>
+<p>See aga viib sind antud lehekülje <a href="#alg">algusesse</a><br>
+sellisel juhu peab olema lekekülje alguses nn. järjehoidja (id="alg")</p>
+<p>&lt;a href=&quot;#alg&quot;&gt;algusesse&lt;/a&gt;</p>
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="pilt">Pilt</h4>
+<p>Pildi lisamiseks kasutatakse märgendit &lt;img&gt;<br>
+See on ilus talve pilt<br></p>
+<img src="./Pildid/talv.jpg" alt="Talv"> 
+<p>&lt;img src=&quot;talv.jpg&quot; alt=&quot;Talv&quot;&gt;</p>
+<p>Veel saab kasutada erinevaid lisa atribuute laius (width), kõrgus (height), raam(border)</p>
+<p>Nüüd siis väike pilt koos raamiga <img src="./Pildid/talv.jpg" alt="Talv" width="50" height="40" border="2"></p> <!--Border soovitatakse t�psustada CSS-is-->
+<p>&lt;img src=&quot;talv.jpg&quot; alt=&quot;Talv&quot; width=&quot;50&quot; height=&quot;40&quot; border=&quot;2&quot;&gt;</p>
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="tekst">Teksti värv</h4>
+<p>Võimalik on muuta ka teksti värvi, taustavärvi, teksti suurust jne. Selleks kasutatakse märgendil lisaks style atribuuti<br>
+<p style="color:blue ; background-color:red; font-size:200%;  text-align: center"> HOIA</p>
+<p>&lt;p style=&quot;color:blue ; background-color:red; font-size:100; text-align: center &quot;&gt;</p>
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="tabel">Tabelid</h4>
+<p>Tabeli kujundamiseks on palju võimalusi. Näites lihtsaim tabel ilma ääriseta ja taustata </p>
+<table style="width:30%">
+  <tr>
+    <th>Eesnimi</th>
+    <th>Perenimi</th> 
+    <th>Vanus</th>
+  </tr>
+  <tr>
+    <td>Aadu</td>
+    <td>Juurikas</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Tmmeoks</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>Juhan</td>
+    <td>Soo</td>
+    <td>80</td>
+  </tr>
+</table>
+<p>&lt;table style=&quot;width:30%&quot;&gt;<br>&lt;tr&gt;<br>&lt;th&gt;Eesnimi&lt;/th&gt;<br>&lt;th&gt;Perenimi&lt;/th&gt;<br>&lt;th&gt;Vanus&lt;/th&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;Aadu&lt;/td&gt;<br>&lt;td&gt;Juurikas&lt;/td&gt;<br>&lt;td&gt;50&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;Eve&lt;/td&gt;<br>&lt;td&gt;Tmmeoks&lt;/td&gt;<br>&lt;td&gt;94&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;tr&gt;<br>&lt;td&gt;Juhan&lt;/td&gt;<br>&lt;td&gt;Soo&lt;/td&gt;<br>&lt;td&gt;80&lt;/td&gt;<br>&lt;/tr&gt;<br>&lt;/table&gt;</p>
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="list">Loetelu</h4>
+<p>Loetelusi on kahte tüüpi korrastamata ja korrastatu</p>
+<p>Korrastamata<p>
+
+<ul>
+  <li>Esimene</li>
+  <li>Teine</li>
+  <li>Kolmas</li>
+</ul>  
+
+<p>Korrastatud<p>
+
+<ol>
+  <li>Esimene</li>
+  <li>Teine</li>
+  <li>kolmas</li>
+</ol>
+
+<p>&lt;p&gt;Korrastamata&lt;p&gt;<br>&lt;ul&gt;<br>&lt;li&gt;Esimene&lt;/li&gt;<br>&lt;li&gt;Teine&lt;/li&gt;<br>&lt;li&gt;Kolmas&lt;/li&gt;<br>&lt;/ul&gt;<br><br>&lt;p&gt;Korrastatud&lt;p&gt;<br>&lt;ol&gt;<br>&lt;li&gt;Esimene&lt;/li&gt;<br>&lt;li&gt;Teine&lt;/li&gt;<br>&lt;li&gt;kolmas&lt;/li&gt;<br>&lt;/ol&gt;<br><br></p>
+
+<hr> <!--horisontaalne joon-->
+
+<h4 id="vorm">Vormingud</h4>
+<p>Võimalik on kasutada nn. teksti eelvorminguid</p>
+<p>Vorming<b> Rasvane tekst </b></p>
+<p>Vorming<mark> Markeeritud tekst </mark></p>
+<p>Vorming<sub> alatekst </sub></p>
+<p>Vorming<sup> ülatekst </sup></p>
+<p>Vorming<del> läbikriipsutatud </del></p>
+<p>Vorming<ins> alla kriipsutatud </ins></p>
+<p>&lt;p&gt;Vorming&lt;b&gt; Rasvane tekst &lt;/b&gt;&lt;/p&gt;<br />&lt;p&gt;Vorming&lt;mark&gt; Markeeritud tekst &lt;/mark&gt;&lt;/p&gt;<br />&lt;p&gt;Vorming&lt;sub&gt; alatekst &lt;/sub&gt;&lt;/p&gt;<br />&lt;p&gt;Vorming&lt;sup&gt; &uuml;latekst &lt;/sup&gt;&lt;/p&gt;<br />&lt;p&gt;Vorming&lt;del&gt; l&auml;bikriipsutatud &lt;/del&gt;&lt;/p&gt;<br />&lt;p&gt;Vorming&lt;ins&gt; alla kriipsutatud &lt;/ins&gt;&lt;/p&gt;</p>
+
+
+<hr> <!--horisontaalne joon-->
+<h4 id="kom">Kommentaar</h4>
+<p>Kui soovid koodi kirjutada midagi sellist, mis poleks brauseris nähtav, saab selleks kasutada kommentaari märgist.</p>
+<p>&lt;!-- tegelikul pole seda teksti brauseris n&auml;ha--&gt;</p>
+<br>
+
+<footer>
+  <p style="position: fixed; font-size: 180%;  text-align: center; width: 100%; bottom: 0;"><a href="#alg">Algusesse</a></p>
+</footer>
+
+</body>
+</html>

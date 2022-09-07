@@ -1,0 +1,36 @@
+
+  .border{
+      position: absolute;
+      top: 33%;
+      left: 30%;
+      background-color: rgba(37, 37, 41, 0.514);
+      font-size: 27px;
+      border: 3px solid blue ;
+      border-radius: 15%;
+      color: red;
+      
+  }
+  
+  .border:hover:after{
+     content: attr(data-hover);
+    }
+
+    .raamat{
+        
+        height: 129px;
+        width: 100px;
+        position: relative;
+        animation-name: example;
+        animation-duration: 15s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        background-repeat: no-repeat;
+        
+      }
+
+      @keyframes example {
+        0%   {left:10%; top:5%;}
+        25%  {left:80%; top:5%;}
+        50%  {left:80%; top:75%;}
+        75%  {left:10%; top:75%;}
+        100% {left:10%; top:5%;}

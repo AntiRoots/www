@@ -1,0 +1,29 @@
+
+header{
+    
+    height: 25vh;
+    background-color: aqua;
+    
+}
+
+
+#esimene, #teine, #kolmas{
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+}
+#esimene{
+    background-image: url(https://images.pexels.com/photos/4577733/pexels-photo-4577733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+   
+}
+
+#teine{
+    background-image: url(https://images.pexels.com/photos/3822981/pexels-photo-3822981.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+}
+@media (max-width: 600px){
+    body{
+        background-color:red;
+    }
+}
